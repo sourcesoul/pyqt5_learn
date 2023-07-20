@@ -1,0 +1,2 @@
+start "D:\learn\pythonPractice\PyQt_learn\venv_PYQT5\Lib\site-packages\qt5_applications\Qt\bin\designer.exe"
+start "D:\learn\pythonPractice\PyQt_learn\venv_PYQT5\Lib\site-packages\qt5_applications\Qt\bin\assistant.exe"
