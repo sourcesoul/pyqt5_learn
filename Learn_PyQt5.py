@@ -37,10 +37,22 @@
 #   滚动控件：QTextBrowser，QScrollArea，QAbstractItemView，QMdiarea，QGraphicsView
 #   辅助控件：QFocusFrame，QSizeGrip，QDesktopWidget
 
+#常用控件及其信号与槽：
+    # QPushButton:
+    #     信号：clicked--按键按下
+    #     槽函数：setText(),setEnabled(),text()
+    # QComboBox:
+    #     信号：
+    # QLineEdit：
+    #     信号：textChanged--文本被修改,returnPressed--按下回车键
+    #     槽函数：text(),setPlaceholderText()--设置提示文本,setText(),clear(),copy(),paste()--拷贝剪贴板内容到光标处
+    # QPlainTextEdit:
+    #     信号：
+
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow,QMessageBox
-# from ui.ImageProcess import Ui_MainWindow
-from ui.test import Ui_MainWindow
+from ui.ImageProcess import Ui_MainWindow
+# from ui.testUI_1 import Ui_MainWindow
 from PyQt5 import QtGui
 from datetime import datetime
 
@@ -48,8 +60,8 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):  # 继承 QMainWindow类和 Ui_M
     def __init__(self, parent=None):
         super(MyMainWindow, self).__init__(parent)  # 初始化父类
         self.setupUi(self)  # 继承 Ui_MainWindow 界面类
-        self.subwindow.show()
-        self.subwindow.show()
+        # self.subwindow.show()
+        # self.subwindow.show()
         # self.label.setPixmap(QtGui.QPixmap("D:\learn\pythonPractice\PyQt_learn\PyQt5_practice\image\JPEG.png"))
         
     def click_quit(self):
